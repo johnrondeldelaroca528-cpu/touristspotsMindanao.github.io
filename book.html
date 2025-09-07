@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Where Adventures Awaits</title>
+    <link rel="stylesheet" href="book.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+           <nav> 
+     
+                    
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="Home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="tours.html">Tours</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contacts.html">Contact</a>
+  </div>
+  </nav>   
+     
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">MH</div>
+        <div>
+          <h1>Mindanao City Highlights</h1>
+          <p class="lead">Short city tours & experiences — book a guided half-day or full-day in top Mindanao cities.</p>
+        </div>
+      </div>
+      <div class="badge">City Highlights • Easy Booking</div>
+    </header>
+
+    <div class="grid">
+      <!-- LEFT: city cards -->
+      <main>
+        <section style="margin-bottom:14px">
+          <h2 style="margin:0 0 8px">Popular city highlights</h2>
+          <p class="muted" style="margin:0 0 12px">Select a city and request a tailored itinerary — transfers, guide, and food stops can be included.</p>
+        </section>
+
+        <section class="cards" aria-label="City tours">
+          <!-- Davao -->
+          <article class="card">
+            <div class="media" style="background-image:url('img1/Samal\ Island_\ The\ must-go\ destinations\ in\ Davao.jpeg');" aria-hidden="true"></div>
+            <div class="body">
+              <div class="tag">Davao City</div>
+              <h3 class="title">Samal Island & City Food Crawl</h3>
+              <p class="desc">Cross to Samal for beaches and snorkeling, see the Philippine Eagle Center, and taste durian & local specialties in Davao city markets.</p>
+              <div class="price">From ₱2,500 / person</div>
+            </div>
+          </article>
+
+          <!-- Cagayan de Oro -->
+          <article class="card">
+            <div class="media" style="background-image:url('img1/12\ Must-Visit\ Spots\ in\ CAGAYAN\ DE\ ORO\ &\ Northern\ Mindanao\ for\ your\ 2023\ Bucketlist.jpg');"></div>
+            <div class="body">
+              <div class="tag">Cagayan de Oro</div>
+              <h3 class="title">Whitewater & City Sights</h3>
+              <p class="desc">Half-day river rafting or city highlights (cathedral, market), combined with countryside waterfalls and local snack stops.</p>
+              <div class="price">From ₱2,800 / person</div>
+            </div>
+          </article>
+
+          <!-- Zamboanga -->
+          <article class="card">
+            <div class="media" style="background-image:url('img1/15\ Must-Visit\ Beaches\ in\ the\ Philippines\ That\ Aren’t\ Boracay\ -\ Klook\ Travel\ Blog.jpg');"></div>
+            <div class="body">
+              <div class="tag">Zamboanga City</div>
+              <h3 class="title">Pink Sand & Vinta Ride</h3>
+              <p class="desc">Boat to Great Santa Cruz Island, enjoy the pink sand lagoon, and take a vinta ride while learning about local seafaring traditions.</p>
+              <div class="price">From ₱3,000 / person</div>
+            </div>
+          </article>
+
+          <!-- General Santos -->
+          <article class="card">
+            <div class="media" style="background-image:url('img1/Tuna\ Bumbu\ Kemangi.jpg');"></div>
+            <div class="body">
+              <div class="tag">General Santos</div>
+              <h3 class="title">Tuna Market & Culinary Tour</h3>
+              <p class="desc">Visit the tuna auction, sample fresh seafood, and explore local markets — great during Tuna Festival season.</p>
+              <div class="price">From ₱2,200 / person</div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <!-- RIGHT: Booking form -->
+      <aside class="sidebar" aria-label="Booking form">
+        <h3 style="margin:0 0 8px">Book a City Highlights Tour</h3>
+        <form method="post" action="#">
+          <label for="city">Choose city</label>
+          <select id="city" name="city" required>
+            <option value="">Select a city</option>
+            <option>Davao City</option>
+            <option>Cagayan de Oro</option>
+            <option>Zamboanga City</option>
+            <option>General Santos</option>
+          </select>
+
+          <div class="row">
+            <div style="flex:1">
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+            <div style="width:110px">
+              <label for="pax">Pax</label>
+              <select id="pax" name="pax">
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="type">Tour Type</label>
+          <select id="type" name="type">
+            <option>Half-day</option>
+            <option>Full-day</option>
+            <option>Custom (multi-day)</option>
+          </select>
+
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="notes">Special requests</label>
+          <input id="notes" name="notes" type="text" placeholder="Dietary, accessibility, pickup point...">
+
+          <div style="display:flex;gap:8px;margin-top:6px">
+            <button class="btn" type="submit">Request Quote</button>
+            <button class="btn" type="reset" style="background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.04)">Clear</button>
+          </div>
+
+          <p class="muted" style="margin-top:8px">Tip: to receive confirmations via WhatsApp, include your country code in the email or notes.</p>
+        </form>
+      </aside>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Mindanao Uncovered. All rights reserved.</p>
+      <div class="social" aria-label="Social links">
+      
+        <a href="https://www.facebook.com/YourPage" aria-label="Facebook" target="_top" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.49 17.52 2 12 2S2 6.49 2 12.07c0 5 3.66 9.13 8.44 9.96v-7.05H7.9v-2.9h2.54V9.41c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.84h2.74l-.44 2.9h-2.3V22c4.78-.83 8.44-4.96 8.44-9.93z"/></svg>
+        </a>
+       
+        <a href="https://maps.google.com" aria-label="Google Maps" target="_top" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.14 2 5 5.14 5 9c0 6.08 7 13 7 13s7-6.92 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+        </a>
+     
+        <a href="https://www.youtube.com/YourChannel" aria-label="YouTube" target="_top" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.1-.9C15.6 3.6 12 3.6 12 3.6h-.1s-3.6 0-6.6.4c-.4 0-1.3.1-2.1.9-.6.7-.8 2.3-.8 2.3S2 9 2 10.8v2.3c0 1.8.3 3.6.3 3.6s.2 1.6.8 2.3c.8.8 1.8.8 2.3.9 1.7.2 7.3.4 7.3.4s3.6 0 6.6-.4c.4 0 1.3-.1 2.1-.9.6-.7.8-2.3.8-2.3s.3-1.8.3-3.6v-2.3c0-1.8-.3-3.6-.3-3.6zM10 14.2V8.6l5 2.8-5 2.8z"/></svg>
+        </a>
+      </div>
+
+      
+    </footer>
+  </div>
+</body>
