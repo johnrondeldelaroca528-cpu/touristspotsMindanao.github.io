@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contacts.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+           <nav>              
+  </a>
+  <div class="nav-links" id="navLinks">
+     <a href="Home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="tours.html">Tours</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contacts.html">Contact</a>
+  </div>
+
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+                    </div>
+    <nav>
+
+  <header class="hero">
+    <span class="badge">Contact</span>
+    <h1>Let’s plan your next adventure ✈️🏝️</h1>
+    <p>Questions about itineraries, custom tours, or group rates? Send us a note and we’ll get back within one business day.</p>
+  </header>
+
+  <main class="wrap contact-grid">
+
+
+    <section class="card" aria-labelledby="contact-form-title">
+      <form action="https://example.com/contact" method="post" novalidate>
+        <h2 id="contact-form-title" style="margin:0 0 6px 0;padding:0 2px;">Send us a message</h2>
+
+        <fieldset class="row-2" aria-label="Your details">
+          <div>
+            <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" placeholder="Juan Dela Cruz" required autocomplete="name" />
+          </div>
+          <div>
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" />
+          </div>
+        </fieldset>
+
+        <fieldset class="row-2" aria-label="Contact preference">
+          <div>
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+63 9XX XXX XXXX" autocomplete="tel" />
+            <p class="hint">We’ll only call for time‑sensitive issues.</p>
+          </div>
+          <div>
+            <label for="tour">Tour interested in</label>
+            <select id="tour" name="tour">
+              <option value="">Select a tour</option>
+              <option>Siargao Island Hopping</option>
+              <option>Camiguin Island</option>
+              <option>Samal Island Beach</option>
+              <option>Mount Apo Trek</option>
+              <option>Tinuy-an Falls</option>
+              <option>Whitewater Rafting in Cagayan de Oro</option> 
+              <option>Philippine Eagle Center</option> 
+              <option>Zamboanga City</option>
+              <option>Lake Sebu Cultural</option>
+              <option>Davao City Sightseeing</option>
+              <option>Enchanted River</option>
+              <option>Dinagat Islands</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="row-2" aria-label="Dates and guests">
+          <div>
+            <label for="date">Preferred date</label>
+            <input id="date" name="date" type="date" />
+          </div>
+          <div>
+            <label for="guests">No. of guests</label>
+            <input id="guests" name="guests" type="number" min="1" step="1" placeholder="2" />
+          </div>
+        </fieldset>
+
+        <fieldset aria-label="Message">
+          <div>
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us a bit about your trip…" required></textarea>
+          </div>
+        </fieldset>
+
+        <div class="check">
+          <input id="consent" name="consent" type="checkbox" required />
+          <label for="consent">I agree to the processing of my information for the purpose of this inquiry. <span class="req" aria-hidden="true">*</span></label>
+        </div>
+
+        <button class="btn" type="submit">Send inquiry</button>
+        <p class="hint">Fields marked <span class="req">*</span> are required.</p>
+      </form>
+    </section>
+
+    <!-- Contact Info / Map -->
+    <aside class="card info" aria-labelledby="contact-info-title">
+      <h2 id="contact-info-title">Contact information</h2>
+      <p>Prefer to talk to a human? We’re here Mon–Fri, 9:00–18:00 (PH Time).</p>
+
+      <div class="kv">
+        <div class="row">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 5a2 2 0 0 1 2-2h2.3a2 2 0 0 1 1.9 1.4l.8 2.6a2 2 0 0 1-.5 2l-1 1.1a16 16 0 0 0 7.2 7.2l1.1-1a2 2 0 0 1 2-.5l2.6.8A2 2 0 0 1 22 20.7V23a2 2 0 0 1-2 2h-1C9.3 25 3 18.7 3 10V8a3 3 0 0 1-1-3Z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div>
+            <strong>Phone / Viber</strong>
+            <span>+63 (02) 8123 4567</span>
+          </div>
+        </div>
+        <div class="row">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6.5 11.4 12a1 1 0 0 0 1.2 0L20 6.5M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div>
+            <strong>Email</strong>
+            <span>hello@wandermore.tours</span>
+          </div>
+        </div>
+        <div class="row">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-5.3 7-12A7 7 0 1 0 5 10c0 6.7 7 12 7 12Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div>
+            <strong>Office</strong>
+            <span>6F, Traveler Hub, Makati City, Philippines</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <iframe class="map" title="WanderMore Tours Office Map"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Makati%20City%2C%20Philippines&output=embed">
+        </iframe>
+      </div>
+    </aside>
+
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+       <footer>
+      <p>&copy; 2025 Mindanao Uncovered. All rights reserved.</p>
+      <div class="social" aria-label="Social links">
+      
+        <a href="https://www.facebook.com/YourPage" aria-label="Facebook" target="_top" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.49 17.52 2 12 2S2 6.49 2 12.07c0 5 3.66 9.13 8.44 9.96v-7.05H7.9v-2.9h2.54V9.41c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.84h2.74l-.44 2.9h-2.3V22c4.78-.83 8.44-4.96 8.44-9.93z"/></svg>
+        </a>
+       
+        <a href="https://maps.google.com" aria-label="Google Maps" target="_top" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.14 2 5 5.14 5 9c0 6.08 7 13 7 13s7-6.92 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+        </a>
+     
+        <a href="https://www.youtube.com/YourChannel" aria-label="YouTube" target="_top" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2s-.2-1.6-.8-2.3c-.8-.8-1.7-.8-2.1-.9C15.6 3.6 12 3.6 12 3.6h-.1s-3.6 0-6.6.4c-.4 0-1.3.1-2.1.9-.6.7-.8 2.3-.8 2.3S2 9 2 10.8v2.3c0 1.8.3 3.6.3 3.6s.2 1.6.8 2.3c.8.8 1.8.8 2.3.9 1.7.2 7.3.4 7.3.4s3.6 0 6.6-.4c.4 0 1.3-.1 2.1-.9.6-.7.8-2.3.8-2.3s.3-1.8.3-3.6v-2.3c0-1.8-.3-3.6-.3-3.6zM10 14.2V8.6l5 2.8-5 2.8z"/></svg>
+        </a>
+      </div>
+
+      
+    </footer>
+    </body>
+</html>
+
+    </body>
+</html>
+    
