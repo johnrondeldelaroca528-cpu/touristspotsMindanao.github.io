@@ -18,7 +18,7 @@
 }
 :root{
     --bg: #0b0c10;
-    --card: #12151a;
+   --card: #fbfcfd;
     --text: #e8eef5;
     --brand: #4cc9f0;
     --accent: #80ed99;
@@ -338,3 +338,4 @@ footer{
     background:#06202a;
     color:#bfefff;
   }
+
